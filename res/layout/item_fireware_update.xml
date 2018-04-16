@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_black"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/font_white"
+        android:textSize="14sp" />
+    <!-- android:text="云朵3：I3-BCDE  固件版本：2.555" -->
+
+    <Button
+        android:id="@+id/btUpdate"
+        android:layout_width="84dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:text="请稍候"
+        android:textColor="@color/font_white"
+        android:textSize="14sp" />
+
+</LinearLayout>

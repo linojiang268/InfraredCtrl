@@ -1,0 +1,85 @@
+<resources>
+
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Listview.Common" parent="@android:style/Widget.ListView.White">
+        <item name="android:divider">@drawable/listview_divider</item>
+        <item name="android:dividerHeight">2.0px</item>
+        <!-- <item name="android:scrollbars">none</item> -->
+        <item name="android:longClickable">false</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:scrollingCache">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="Theme.Start" parent="android:Theme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+      <style name="AnimationPreview">  
+        <item name="android:windowEnterAnimation">@anim/scale</item>  
+        <item name="android:windowExitAnimation">@anim/scale1</item>  
+    </style>
+    
+      
+    <style name="about_title_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/more_subtitle</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+
+    <style name="about_content_style">
+        <item name="android:textSize">@dimen/text_normal_size</item>
+        <item name="android:background">@drawable/detailpanel_bg</item>
+        <item name="android:padding">15.0dip</item>
+    </style>
+
+    <style name="top_bg_style">
+        <item name="android:background">@drawable/top_bg_blue</item>
+    </style>
+
+    <style name="bg_style">
+        <item name="android:background">@color/color_bg</item>
+    </style>
+<!--  
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/zoomin</item>
+        <item name="android:windowExitAnimation">@anim/zoomout</item>
+    </style>
+    -->
+</resources>

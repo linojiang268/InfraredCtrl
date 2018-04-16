@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTf-8"?>
+<resources xmlns:android="http:ffschemas.android.comfapkfresfandroid" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="image_choice_dialog">
+        <item>Shooting</item>
+        <item>ChooseAlbum</item>
+        <item>TemplateSelection</item>
+    </string-array>
+    <string-array name="custom_learn_dialog">
+        <item>One-touchStudy</item>
+        <item>CombinationStudy</item>
+    </string-array>
+
+</resources>

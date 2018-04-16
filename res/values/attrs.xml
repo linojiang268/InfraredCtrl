@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="custom_view">
+        <attr name="tagId" format="integer" />
+        <attr name="customable" format="boolean" />
+        <attr name="hasLearnBackground" format="reference" />
+        <attr name="noLearnBackground" format="reference" />
+        <attr name="noLearnTextColor" format="color" />
+        <attr name="hasLearnTextColor" format="color" />
+    </declare-styleable>
+
+</resources>

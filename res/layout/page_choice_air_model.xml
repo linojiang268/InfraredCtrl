@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_navigation"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btAirModelBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_back_style"
+            android:contentDescription="@null" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/choice_study_air_page"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/btTvModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_stb_model_style"
+            android:button="@null"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_study_air_title"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/cbMakeWarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cb_choice_model_wram_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:text="@string/choice_air_model_hert" />
+
+                <CheckBox
+                    android:id="@+id/cbMakeCould"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cb_choice_model_wram_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:text="@string/choice_air_model_code" />
+
+                <CheckBox
+                    android:id="@+id/cbExchangeAir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cb_choice_model_wram_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:text="@string/choice_air_model_changeGas" />
+
+                <CheckBox
+                    android:id="@+id/cbMoist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cb_choice_model_wram_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:text="@string/choice_air_model_Dehumidification" />
+
+                <CheckBox
+                    android:id="@+id/cbAutomatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cb_choice_model_wram_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:text="@string/choice_air_model_Automatic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wramNumberView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:text="@string/choice_study_air_warm"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="44dp"
+                android:orientation="vertical" >
+
+                <frame.infraredctrl.view.MySeekBar
+                    android:id="@+id/WeatherGlass"
+                    android:layout_width="30dp"
+                    android:layout_height="200dp"
+                    android:max="1400"
+                    android:progressDrawable="@drawable/seekbar_define_style"
+                    android:thumb="@drawable/tv_define_checked" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ibtSave"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:background="@drawable/bt_add_device_save_style"
+            android:contentDescription="@null"
+            android:text="@string/custom_key_save"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

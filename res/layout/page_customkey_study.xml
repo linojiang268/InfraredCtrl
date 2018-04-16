@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:infraredctrl="http://schemas.android.com/apk/res/com.infraredctrl.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      android:background="@drawable/black_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_navigation"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/combination_key_study_tw"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etComkeyName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/add_device_ed_name"
+                android:gravity="center"
+                android:hint="@string/combination_key_study_tw_custom_name"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/combination_key_study_tw_project"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/combination_key_study_tw_interval_time"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/tvNum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/combination_key_study_tw_project_number1"
+                    android:textSize="15sp"
+                    infraredctrl:customable="true"
+                    infraredctrl:hasLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:hasLearnTextColor="@color/font_white"
+                    infraredctrl:noLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:noLearnTextColor="@color/font_black"
+                    infraredctrl:tagId="0" />
+
+                <Spinner 
+                    android:id="@+id/tvInterval1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:background="@drawable/comkey_study_interval_time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/tvNum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/combination_key_study_tw_project_number2"
+                    android:textSize="15sp"
+                    infraredctrl:customable="true"
+                    infraredctrl:hasLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:hasLearnTextColor="@color/font_white"
+                    infraredctrl:noLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:noLearnTextColor="@color/font_black"
+                    infraredctrl:tagId="0" />
+
+<!--                 <frame.infraredctrl.view.CanLearnTextView -->
+<!--                     android:id="@+id/tvInterval2" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginLeft="35dp" -->
+<!--                     android:gravity="center" -->
+<!--                     android:text="@string/combination_key_study_tw_interval_number" -->
+<!--                     android:textSize="15sp" -->
+<!--                     infraredctrl:customable="true" -->
+<!--                     infraredctrl:hasLearnBackground="@drawable/comkey_study_interval_time" -->
+<!--                     infraredctrl:hasLearnTextColor="@color/font_white" -->
+<!--                     infraredctrl:noLearnBackground="@drawable/comkey_study_interval_time" -->
+<!--                     infraredctrl:noLearnTextColor="@color/font_black" -->
+<!--                     infraredctrl:tagId="0" /> -->
+                <Spinner 
+                    android:id="@+id/tvInterval2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:background="@drawable/comkey_study_interval_time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/tvNum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/combination_key_study_tw_project_number3"
+                    android:textSize="15sp"
+                    infraredctrl:customable="true"
+                    infraredctrl:hasLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:hasLearnTextColor="@color/font_white"
+                    infraredctrl:noLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:noLearnTextColor="@color/font_black"
+                    infraredctrl:tagId="0" />
+
+<!--                 <frame.infraredctrl.view.CanLearnTextView -->
+<!--                     android:id="@+id/tvInterval3" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginLeft="35dp" -->
+<!--                     android:gravity="center" -->
+<!--                     android:text="@string/combination_key_study_tw_interval_number" -->
+<!--                     android:textSize="15sp" -->
+<!--                     infraredctrl:customable="true" -->
+<!--                     infraredctrl:hasLearnBackground="@drawable/comkey_study_interval_time" -->
+<!--                     infraredctrl:hasLearnTextColor="@color/font_white" -->
+<!--                     infraredctrl:noLearnBackground="@drawable/comkey_study_interval_time" -->
+<!--                     infraredctrl:noLearnTextColor="@color/font_black" -->
+<!--                     infraredctrl:tagId="0" /> -->
+                <Spinner 
+                    android:id="@+id/tvInterval3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:background="@drawable/comkey_study_interval_time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/tvNum4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/combination_key_study_tw_project_number4"
+                    android:textSize="15sp"
+                    infraredctrl:customable="true"
+                    infraredctrl:hasLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:hasLearnTextColor="@color/font_white"
+                    infraredctrl:noLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:noLearnTextColor="@color/font_black"
+                    infraredctrl:tagId="0" />
+
+<!--                 <frame.infraredctrl.view.CanLearnTextView -->
+<!--                     android:id="@+id/tvInterval4" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginLeft="35dp" -->
+<!--                     android:gravity="center" -->
+<!--                     android:text="@string/combination_key_study_tw_interval_number" -->
+<!--                     android:textSize="15sp" -->
+<!--                     infraredctrl:customable="true" -->
+<!--                     infraredctrl:hasLearnBackground="@drawable/comkey_study_interval_time" -->
+<!--                     infraredctrl:hasLearnTextColor="@color/font_white" -->
+<!--                     infraredctrl:noLearnBackground="@drawable/comkey_study_interval_time" -->
+<!--                     infraredctrl:noLearnTextColor="@color/font_black" -->
+<!--                     infraredctrl:tagId="0" /> -->
+                <Spinner 
+                    android:id="@+id/tvInterval4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:background="@drawable/comkey_study_interval_time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/tvNum5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/combination_key_study_tw_project_number5"
+                    android:textSize="15sp"
+                    infraredctrl:customable="true"
+                    infraredctrl:hasLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:hasLearnTextColor="@color/font_white"
+                    infraredctrl:noLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:noLearnTextColor="@color/font_black"
+                    infraredctrl:tagId="0" />
+
+<!--                 <frame.infraredctrl.view.CanLearnTextView -->
+<!--                     android:id="@+id/tvInterval5" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginLeft="35dp" -->
+<!--                     android:gravity="center" -->
+<!--                     android:text="@string/combination_key_study_tw_interval_number" -->
+<!--                     android:textSize="15sp" -->
+<!--                     infraredctrl:customable="true" -->
+<!--                     infraredctrl:hasLearnBackground="@drawable/comkey_study_interval_time" -->
+<!--                     infraredctrl:hasLearnTextColor="@color/font_white" -->
+<!--                     infraredctrl:noLearnBackground="@drawable/comkey_study_interval_time" -->
+<!--                     infraredctrl:noLearnTextColor="@color/font_black" -->
+<!--                     infraredctrl:tagId="0" /> -->
+                <Spinner 
+                    android:id="@+id/tvInterval5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:background="@drawable/comkey_study_interval_time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/tvNum6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/combination_key_study_tw_project_number6"
+                    android:textSize="15sp"
+                    infraredctrl:customable="true"
+                    infraredctrl:hasLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:hasLearnTextColor="@color/font_white"
+                    infraredctrl:noLearnBackground="@drawable/comkey_study_project"
+                    infraredctrl:noLearnTextColor="@color/font_black"
+                    infraredctrl:tagId="0" />
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/tvInterval6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:text="@string/custom_key_save"
+                    android:textSize="15sp"
+                    infraredctrl:customable="true"
+                    infraredctrl:hasLearnBackground="@drawable/comkey_study_interval_time"
+                    infraredctrl:hasLearnTextColor="@color/font_white"
+                    infraredctrl:noLearnBackground="@drawable/comkey_study_interval_time"
+                    infraredctrl:noLearnTextColor="@color/font_black"
+                    infraredctrl:tagId="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

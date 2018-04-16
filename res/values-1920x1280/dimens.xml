@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- TabHost相关设置 -->
+    <dimen name="tab_host_text_size">11sp</dimen>
+    <dimen name="tab_host_tip_text_size">10sp</dimen>
+    <dimen name="tab_host_tip_text_marginLeft">20dp</dimen>
+    <dimen name="tab_host_tip_icon_size">20dp</dimen>
+    <dimen name="tab_host_image_size">32dp</dimen>
+    <dimen name="tab_host_padding_top">2dp</dimen>
+    <dimen name="tab_host_padding_bottom">2dp</dimen>
+
+    <!-- 标题栏高度 -->
+    <dimen name="title_height">55dp</dimen>
+    <dimen name="title_center_text_size">20sp</dimen>
+    <dimen name="title_small_text_size">16sp</dimen>
+    <dimen name="title_margin">5dp</dimen>
+    <dimen name="title_icon_padding">10dp</dimen>
+    <dimen name="title_select_padding">5dp</dimen>
+    <dimen name="title_tag_select_padding">8dp</dimen>
+    <dimen name="title_select_text_size">15sp</dimen>
+    <dimen name="title_tag_select_text_size">13sp</dimen>
+
+    <!-- 发现选项条高度 -->
+    <dimen name="discover_item_height">50dp</dimen>
+    <dimen name="discover_image_size">40dp</dimen>
+    <dimen name="discover_text_size">17sp</dimen>
+    <dimen name="discover_item_padding">10dp</dimen>
+    <dimen name="discover_item_line_padding">60dp</dimen>
+    <dimen name="discover_arrow_size">20dp</dimen>
+
+    <!-- 联系人 -->
+    <dimen name="contacts_select_text_size">13sp</dimen>
+    <dimen name="contacts_select_padding">8dp</dimen>
+    <dimen name="contacts_select_item_paddingBottom">7dp</dimen>
+
+    <!-- 所有ListView中有关人物信息的padding和margin -->
+    <dimen name="listView_user_icon_size">70dp</dimen>
+    <dimen name="listView_user_name_size">17sp</dimen>
+    <dimen name="listView_padding_top_bottom">5dp</dimen>
+    <dimen name="listView_padding_left">5dp</dimen>
+    <dimen name="listView_padding_right">10dp</dimen>
+    <dimen name="listView_margin_icon_name">10dp</dimen>
+    <dimen name="listView_user_sex_icon_size">20dp</dimen>
+    <dimen name="listView_user_sex_text_size">13sp</dimen>
+    <dimen name="listView_content_text_size">14sp</dimen>
+    <dimen name="listView_time_text_size">10sp</dimen>
+    <dimen name="listView_user_grade_icon_size">20dp</dimen>
+    <dimen name="listView_user_grade_text_size">15sp</dimen>
+    <dimen name="listView_item_margin_top">1dp</dimen>
+    <dimen name="listView_line_margin_left">80dp</dimen>
+    <dimen name="listView_task_type_icon_size">25dp</dimen>
+    <dimen name="listView_task_title_text_size">15sp</dimen>
+
+    <!-- 下拉刷新ListView的HeaderView和FooterView相关 -->
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">50dp</dimen>
+    <dimen name="header_tip_text_size">13sp</dimen>
+    <dimen name="footer_tip_text_size">15sp</dimen>
+
+    <!-- 登录注册 -->
+    <dimen name="login_circle_btn_size">80dp</dimen>
+
+    <!-- 个人中心的HeaderView -->
+    <dimen name="personal_center_header_half_height">45dp</dimen>
+    <!-- 这个是背景图片的marginBottom,也是用户信息栏高的一半 -->
+    <dimen name="personal_center_header_user_icon_size">70dp</dimen>
+    <!-- 头像大小一定要小于personal_center_header_half_height X 2 -->
+    <dimen name="personal_center_header_user_icon_margin">10dp</dimen>
+    <dimen name="personal_center_header_user_info_margin">90dp</dimen>
+    <!-- 用户信息距左边距离一定是icon size + icon_margin X 2 -->
+
+
+    <!-- 个人中心列表 -->
+    <dimen name="personal_center_item_padding_top_bottom">12dp</dimen>
+    <dimen name="personal_center_text_size">17sp</dimen>
+    <dimen name="personal_center_margin_left">20dp</dimen>
+    <dimen name="personal_center_text_marging">15dp</dimen>
+    <dimen name="personal_center_arrow_size">20dp</dimen>
+    <dimen name="personal_center_arrow_marginRight">7dp</dimen>
+    <dimen name="personal_center_activity_size">30dp</dimen>
+    <!-- 喜欢活动Icon大小 -->
+    <dimen name="personal_center_more_activity_size">25dp</dimen>
+    <!-- 喜欢活动Icon大小  多于4个时 -->
+    <dimen name="personal_center_tag_width">88dp</dimen>
+    <!-- 就是“个人签名”，“昵称”等的标签字长度 -->
+    <dimen name="personal_center_grade_margin">5dp</dimen>
+    <!-- 财富等级人气等级，进度条之间 -->
+    <dimen name="personal_center_progress_height">1dp</dimen>
+    <!-- 进度条高度 -->
+    <dimen name="personal_center_coin_text_size">12sp</dimen>
+    <dimen name="personal_center_popularity_icon_size">16dp</dimen>
+    
+    <!-- 别人个人中心底部切换卡 -->
+	<dimen name="other_center_tag_height">48dp</dimen>	
+	<dimen name="other_center_tag_icon_size">25dp</dimen>
+	<dimen name="other_center_tag_text_size">14sp</dimen>	
+	
+	<!-- 我的个人中心 -->
+	<dimen name="my_center_icon_size">120dp</dimen>
+	<dimen name="my_center_icon_margin_top">20dp</dimen>
+	<dimen name="my_center_icon_margin_bottom">10dp</dimen>
+	
+    <!-- 活动发布 -->
+
+    <dimen name="the_select_event_type_pic_wh">25dp</dimen>
+    <dimen name="the_select_event_type_pic_margin_left">15dp</dimen>
+    <dimen name="the_select_event_type_layout_padding">8dp</dimen>
+
+    <!-- 活动发布 -->
+    <dimen name="event_type_layout_wh">85dp</dimen>
+    <dimen name="click_event_type_layout_wh">85dp</dimen>
+    <dimen name="event_type_lllayout_wh">93dp</dimen>
+    <dimen name="event_type_pic_wh">48dp</dimen>
+    <dimen name="select_sex_icon_wh">48dp</dimen>
+    <dimen name="click_select_sex_icon_wh">65dp</dimen>
+    <dimen name="click_event_type_pic_wh">62dp</dimen>
+    <dimen name="click_event_type_text_size">15sp</dimen>
+    <dimen name="event_type_layout_padding_top">10dp</dimen>
+    <dimen name="event_type_text_margin_top">7dp</dimen>
+    <dimen name="event_type_text_size">14sp</dimen>
+    <dimen name="select_event_type_text_size">13sp</dimen>
+    <dimen name="select_event_type_margin_top">10dp</dimen>
+    <dimen name="event_type_bottom_view">10dp</dimen>
+    <!-- 活动命名 -->
+    <dimen name="select_event_pic_margin_left">40dp</dimen>
+    <dimen name="add_event_name_margin_left">20dp</dimen>
+    <dimen name="add_event_name_edittext_padding">13dp</dimen>
+    <dimen name="add_event_name_pic_wh">110dp</dimen>
+    <dimen name="add_pic_margin_top">20dp</dimen>
+    <dimen name="plus_pic_wh">30dp</dimen>
+    <dimen name="add_pic_text_size">13sp</dimen>
+    <dimen name="add_pic_text_margin_top">10sp</dimen>
+    <!-- 选择参与者要求 -->
+    <dimen name="event_type_participant_margin_left">20dp</dimen>
+    <dimen name="event_type_participant_margin_top">30dp</dimen>
+    <!-- 活动费用 -->
+    <dimen name="event_cost_pic_wh">35dp</dimen>
+    <dimen name="event_cost_pic_margin">10dp</dimen>
+    <dimen name="event_cost_text_padding">15dp</dimen>
+    <dimen name="event_cost_balck_pic_margin_right">15dp</dimen>
+    <dimen name="event_cost_layout_height">50dp</dimen>
+    <dimen name="view_margin_left">55dp</dimen>
+    <dimen name="event_cost_dilog_margin_left">10dp</dimen>
+    <!-- 设定活动时间 -->
+    <dimen name="event_time_margin_right">25dp</dimen>
+    <!-- 设定活动地点 -->
+    <dimen name="event_site_search_layout_padding_top">5dp</dimen>
+    <dimen name="event_site_search_layout_padding">10dp</dimen>
+    <dimen name="event_site_search_tv_padding">8dp</dimen>
+    <dimen name="event_site_location_wh">30dp</dimen>
+    <dimen name="event_site_item_layout_margin">5dp</dimen>
+    <dimen name="event_site_item_margin_left">20dp</dimen>
+    <dimen name="event_site_item_text_margin_top">5dp</dimen>
+    <dimen name="event_site_item_text_size">13sp</dimen>
+    <dimen name="event_site_item_pic_wh">25dp</dimen>
+    <dimen name="event_site_location_pic_wh">25dp</dimen>
+    <!-- 已发起活动 -->
+    <dimen name="launch_event_margin_top">15dp</dimen>
+    <dimen name="share_event_margin_left">40dp</dimen>
+    <dimen name="launch_event_copy_margin_top">25dp</dimen>
+    <dimen name="copy_connect_size">12sp</dimen>
+    <dimen name="launch_event_layout_margin_bottom">40dp</dimen>
+    <!-- 排行榜 -->
+    <dimen name="popularity_title_margin_top">5dp</dimen>
+    <dimen name="popularity_title_wh">180dp</dimen>
+    <dimen name="popularity_layout_h">40dp</dimen>
+    <!-- 普通文字大小 -->
+    <dimen name="text_size">15sp</dimen>
+    
+    <!-- 赠送礼物列表 -->
+     <dimen name="send_gift_tab_padding">10dp</dimen>
+     <dimen name="send_gift_tab_text_size">17sp</dimen>
+     <dimen name="send_gift_tab_margin">7dp</dimen>
+     <dimen name="send_gift_tab_height">50dp</dimen>
+     <dimen name="send_gift_tab_edit_height">30dp</dimen>
+
+</resources>

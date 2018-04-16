@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="240dp"
+    android:background="@drawable/wifi_set_stren_dialog_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="@string/configuration_wifistreng_devicename"
+            android:textColor="@color/font_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etWifiStrenAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ibt_set_click_background_old"
+            android:hint="@string/configuration_wifistreng_input_input_devicename"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="4dp"
+            android:text="@string/configuration_wifistreng_devicepassword"
+            android:textColor="@color/font_black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ibt_set_click_background_old"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/etWifiStrenPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="@string/configuration_wifistreng_input_devicepassword"
+                android:inputType="textPassword"
+                android:paddingBottom="6dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="6dp"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbShowPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/show_password_but"
+                android:button="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btOpen"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:background="@drawable/popu_add_device"
+                android:text="开  启"
+                android:textColor="#FFFAF0"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1.0" />
+
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/popu_add_device"
+                android:gravity="center"
+                android:text="取  消"
+                android:textColor="#FFFAF0"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

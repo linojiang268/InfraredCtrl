@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@drawable/air_down_temperature" android:state_pressed="true"/>
+    <item android:drawable="@drawable/aircdt_down_temperature_unstudy" android:state_pressed="false"/>
+    
+</selector>

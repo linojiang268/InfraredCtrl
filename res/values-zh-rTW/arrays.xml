@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTf-8"?>
+<resources xmlns:android="http:ffschemas.android.comfapkfresfandroid" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="image_choice_dialog">
+        <item>拍攝</item>
+        <item>相冊選擇</item>
+        <item>模板選擇</item>
+    </string-array>
+    <string-array name="custom_learn_dialog">
+        <item>單鍵學習</item>
+        <item>組合鍵學習</item>
+    </string-array>
+
+</resources>

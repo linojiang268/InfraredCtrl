@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:infraredctrl="http://schemas.android.com/apk/res/com.infraredctrl.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_navigation"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btAircdtReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bt_back_ico"
+            android:contentDescription="@null"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/airTempltName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/mbtAircdtModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/left"
+            android:gravity="center"
+            android:text="@string/add_modelair_timing" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/device_list_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="95dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tvRircdtNumber1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:text="23"
+                                android:textColor="#CCCCCC"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/tvRircdtNumber2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/tvRircdtNumber1"
+                                android:layout_alignBottom="@+id/tvRircdtNumber1"
+                                android:layout_toRightOf="@+id/tvRircdtNumber1"
+                                android:text="°C"
+                                android:textSize="25sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvAirDirection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearLayout1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="95dp"
+                            android:layout_height="60dp"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/ivPattern"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="95dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_horizontal" >
+
+                            <ImageView
+                                android:id="@+id/ivLine"
+                                android:layout_width="50dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="20dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:clickable="false" />
+
+                <frame.infraredctrl.view.CanLearnTrapezoidImageButton
+                    android:id="@+id/ibtAircdtPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    infraredctrl:customable="false"
+                    infraredctrl:hasLearnBackground="@drawable/ibt_aircdt_power_study_style"
+                    infraredctrl:noLearnBackground="@drawable/ibt_aircdt_power_unstudy_style"
+                    infraredctrl:tagId="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <frame.infraredctrl.view.CanLearnTrapezoidImageButton
+                        android:id="@+id/ibtAircdtHighTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        infraredctrl:customable="false"
+                        infraredctrl:hasLearnBackground="@drawable/ibt_aircdt_up_temperature_study_style"
+                        infraredctrl:noLearnBackground="@drawable/ibt_aircdt_up_temperature_unstudy_style"
+                        infraredctrl:tagId="2" />
+
+                    <frame.infraredctrl.view.CanLearnTrapezoidImageButton
+                        android:id="@+id/ibtAircdtLowTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        infraredctrl:customable="false"
+                        infraredctrl:hasLearnBackground="@drawable/ibt_aircdt_down_temperature_study_style"
+                        infraredctrl:noLearnBackground="@drawable/ibt_aircdt_down_temperature_unstudy_style"
+                        infraredctrl:tagId="3" />
+                </LinearLayout>
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/ibtAircdtPattern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/air_bt_model"
+                    infraredctrl:customable="false"
+                    infraredctrl:hasLearnBackground="@drawable/bt_tv_tvav_study_style"
+                    infraredctrl:hasLearnTextColor="#ffffff"
+                    infraredctrl:noLearnBackground="@drawable/bt_tv_tvav_style"
+                    infraredctrl:noLearnTextColor="#ffffff"
+                    infraredctrl:tagId="4" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:clickable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/ibtAircdtAirSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/air_bt_wind_speed"
+                    infraredctrl:customable="false"
+                    infraredctrl:hasLearnBackground="@drawable/bt_tv_define1_study_style"
+                    infraredctrl:hasLearnTextColor="#ffffff"
+                    infraredctrl:noLearnBackground="@drawable/bt_tv_define1_style"
+                    infraredctrl:noLearnTextColor="#ffffff"
+                    infraredctrl:tagId="5" />
+
+                <frame.infraredctrl.view.CanLearnTextView
+                    android:id="@+id/ibtAircdtAirDirection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/air_bt_wind_direction"
+                    infraredctrl:customable="false"
+                    infraredctrl:hasLearnBackground="@drawable/bt_tv_define1_study_style"
+                    infraredctrl:hasLearnTextColor="#ffffff"
+                    infraredctrl:noLearnBackground="@drawable/bt_tv_define1_style"
+                    infraredctrl:noLearnTextColor="#ffffff"
+                    infraredctrl:tagId="6" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

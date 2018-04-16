@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:background="#1FBBA6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_navigation"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btTemCharBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_back_style"
+            android:contentDescription="@null" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/mTemCharName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/cbTemCharModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left"
+            android:button="@null"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tem_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+      
+     android:background="#1FBBA6"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/mNowAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/mNowTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+<!--  
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/temperature_line" />
+-->
+    <LinearLayout
+        android:id="@+id/mtem_lineLayoutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:background="#1FBBA6"
+        android:layout_marginTop="5dp" >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+                android:background="#1FBBA6"
+        android:orientation="horizontal" >
+
+        <!--
+        <Button
+            android:id="@+id/mbtn_tem_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_tem_timebtn_bg" />
+
+        <Button
+            android:id="@+id/mbtn_tem_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_tem_timebtn_bg" />
+
+        <Button
+            android:id="@+id/mbtn_tem_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_tem_timebtn_bg" />
+
+
+        -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/mbtn_tem_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:clickable="true"
+              android:background="#1FBBA6"
+             android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/mbtn_tem_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@null"
+             android:layout_weight="1"
+               android:background="#1FBBA6"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/mbtn_tem_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:layout_weight="1"
+              android:background="#1FBBA6"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="25sp" />
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+<!--  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+            android:background="#1FBBA6"
+            android:gravity="center"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/temperature_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+             />
+    </LinearLayout>
+-->
+</LinearLayout>

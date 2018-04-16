@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.infraredctrl.activity"
+    android:versionCode="13"
+    android:versionName="1.1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 使用 GPS 获取用户精确定位信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.permission.WAKE_LOCK" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <!-- s视频 ============================================================= -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.infraredctrl.util.Location"
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@drawable/ic_launcher1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.infraredctrl.activity.FirstPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Start" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- ===============================================测试页面================================================ -->
+        <activity
+            android:name="com.infraredctrl.test.IndexPageTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.infraredctrl.test.ViewPageTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.infraredctrl.test.ApSetPageTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.com.infraredctrl.test.LanSetPageTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.infrcom.infraredctrl.test.WanSetPageTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.infrcom.infraredctrl.test.LanAndWanSetPageTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.infraredctrl.test.FireWareUploadPageTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.infraredctrl.test.SettingCC3000WifiPageTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- ===============================================测试页面================================================ -->
+        <!-- ===============================================主页面================================================ -->
+        <!-- 网络服务 -->
+        <service android:name="com.infraredctrl.activity.NetworkService" />
+        <!-- 百度地图定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.9" />
+            </intent-filter>
+        </service>
+        <!-- 第一次启动页面 -->
+        <activity
+            android:name="com.infraredctrl.activity.WelcomePage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 切换卡 -->
+        <activity
+            android:name="com.infraredctrl.activity.TabHostPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 首页 -->
+        <activity
+            android:name="com.infraredctrl.activity.HomePage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 添加设备 -->
+        <activity
+            android:name="com.infraredctrl.activity.AddDevicePage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 修改设备 -->
+        <activity
+            android:name="com.infraredctrl.activity.ModificationDevicePage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 电视机 -->
+        <activity
+            android:name="com.infraredctrl.activity.TvPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 机顶盒 -->
+        <activity
+            android:name="com.infraredctrl.activity.SetTopBoxPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 音响 -->
+        <activity
+            android:name="com.infraredctrl.activity.SoundPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 自定义按键 -->
+        <activity
+            android:name="com.infraredctrl.activity.ComKeyStudyPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 云空调 -->
+        <activity
+            android:name="com.infraredctrl.activity.AirCloudPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 万能空调 -->
+        <activity
+            android:name="com.infraredctrl.activity.AirUniversalPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 万能空调配置页面 -->
+        <activity
+            android:name="com.infraredctrl.activity.AirUniversalModelStudyPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 空调定时页面 -->
+        <activity
+            android:name="com.infraredctrl.activity.AirTimingPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 自定义红外、射频315、射频433页面 -->
+        <activity
+            android:name="com.infraredctrl.activity.UniversalPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 自定义红外、射频315、射频433配置页面 -->
+        <activity
+            android:name="com.infraredctrl.activity.UniversalComKeyStudyPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 图片处理 -->
+        <activity
+            android:name="com.infraredctrl.activity.ImageProgressPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- ===============================================主页面================================================ -->
+
+
+        <!-- ===============================================设置页面================================================ -->
+        <!-- 设置页面 -->
+        <activity
+            android:name="com.infraredctrl.activity.SetPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 网页 -->
+        <activity
+            android:name="com.infraredctrl.activity.WebViewPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 配置设备 -->
+        <activity
+            android:name="com.infraredctrl.activity.SetWifiPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 常见问题 -->
+        <activity
+            android:name="com.infraredctrl.activity.SetCommonProblemPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 用户使用手册 -->
+        <activity
+            android:name="com.infraredctrl.activity.SetUserManualCurlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 下载链接 微信 短信 分享 -->
+        <activity
+            android:name="com.infraredctrl.activity.SetAppSharePage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 关于 -->
+        <activity
+            android:name="com.infraredctrl.activity.AboutUsPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 固件升级 -->
+        <activity
+            android:name="com.infraredctrl.activity.FireWareUpdatePage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- ===============================================设置页面================================================ -->
+        <!-- s视频 ============================================================= -->
+        <activity
+            android:name="com.ipcamer.demo.AddCameraActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Add Camera"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ipcamer.demo.PlayBackTFActivity" />
+        <activity android:name="com.ipcamer.demo.PlayBackActivity" />
+        <activity
+            android:name="com.ipcamer.demo.PlayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="play" />
+        <activity
+            android:name="com.ipcamer.demo.SettingWifiActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="WifiSetting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.ipcamer.demo.StartActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service android:name="com.ipcamer.demo.BridgeService" />
+        <!-- s视频 ============================================================= -->
+        <!-- ====================临时======================== -->
+        <!-- 温度曲线 -->
+        <activity
+            android:name="com.infraredctrl.activity.TemperatureCharts"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 温度曲线 城市选择 -->
+        <activity
+            android:name="com.infraredctrl.activity.ChangeCity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.infraredctrl.activity.RecetaclePage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.infraredctrl.activity.LightPage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 渠道商编号，其中 name 请不要改，将 value 修改为渠道商编号。渠道名称请到 mtj.baidu.com的渠道管理中修改 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Indeo Cloud" />
+        <!-- android:value="Baidu	Market" -->
+        <!-- 您从百度网站获取的 APP	KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="ed30ee1f62" />
+        <!-- 以下是可选的 -->
+        <!-- 是否开启错误日志统计，默认为 false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为 APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 上面的日志发送策略	 为 SET_TIME_INTERVAL 时，需设定时间间隔。取值为 1-24（小时）的整数，默认为 1 -->
+        <!-- <meta-data	android:name="BaiduMobAd_TIME_INTERVAL"	android:value="2"	/> -->
+        <!-- 日志仅在 wifi 网络下发送，默认为 false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="true" />
+        <!-- 是否获取基站位置信息，默认为 true(获取基站位置) -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+
+        <!-- 百度推送 -->
+        <meta-data
+            android:name="api_key"
+            android:value="CXXHhbXriu2fY7WuvV6FttGX" />
+
+        <receiver android:name="com.infraredctrl.util.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push必须的receviver和service声明 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

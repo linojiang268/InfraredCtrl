@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/flModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_air_cloud_study_style"
+        android:descendantFocusability="blocksDescendants" >
+
+        <ImageButton
+            android:id="@+id/ibtModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_air_cloud_study_style"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="未知"
+            android:textColor="@color/font_white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="17"
+                android:textColor="@color/font_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="°C"
+                android:textColor="@color/font_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout> <!-- 备份 -->
+<!-- 制冷 -->
+<!-- infraredctrl:hasLearnBackground="@drawable/bt_air_cloud_study_style" -->
+<!-- infraredctrl:noLearnBackground="@drawable/bt_air_cloud_style" -->
+<!-- 制热 -->
+<!-- infraredctrl:hasLearnBackground="@drawable/bt_air_warm_study_style" -->
+<!-- infraredctrl:noLearnBackground="@drawable/bt_air_warm_style" -->
+<!-- 除湿 -->
+<!-- infraredctrl:hasLearnBackground="@drawable/bt_air_moist_study_style" -->
+<!-- infraredctrl:noLearnBackground="@drawable/bt_air_moist_style" -->
+<!-- 换气 -->
+<!-- infraredctrl:hasLearnBackground="@drawable/bt_air_exchange_air_study_style" -->
+<!-- infraredctrl:noLearnBackground="@drawable/bt_air_exchange_air_style" -->
+<!-- 自动 -->
+<!-- infraredctrl:hasLearnBackground="@drawable/bt_air_auto_study_style" -->
+<!-- infraredctrl:noLearnBackground="@drawable/bt_air_auto_style" -->
+<!-- 温度文字 -->
+<!-- android:text="20°C" -->
+

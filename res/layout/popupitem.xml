@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:background="@drawable/title_function_bg"
+        android:layout_width="160dp"
+    android:layout_height="140dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/popu_InfraredControl"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/popu_add_device"
+        android:textColor="#FFF"
+        android:text="遥控器" />
+        <Button
+        android:id="@+id/popu_VideoControl"
+        android:layout_width="fill_parent"
+            android:layout_marginTop="12dp"
+            android:textColor="#FFF"
+                    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="30dp"
+                android:background="@drawable/popu_add_device"
+        android:text="摄像头" />
+    
+</LinearLayout>    
+
+</LinearLayout>
